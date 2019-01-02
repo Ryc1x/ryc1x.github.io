@@ -104,20 +104,28 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Rui&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Web-based Scheduler ApplicationDate: October - December, 2018 DescriptionThis project is an implementation of web-based scheduler application through Amazon Web Service (AWS) in Software Engineering c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects">
+<meta property="og:url" content="http://yoursite.com/projects/index.html">
 <meta property="og:site_name" content="Rui&#39;s Blog">
+<meta property="og:description" content="Web-based Scheduler ApplicationDate: October - December, 2018 DescriptionThis project is an implementation of web-based scheduler application through Amazon Web Service (AWS) in Software Engineering c">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/projects/images/part.png">
+<meta property="og:image" content="http://yoursite.com/projects/images/org.png">
+<meta property="og:image" content="http://yoursite.com/projects/images/admin.png">
+<meta property="og:updated_time" content="2019-01-02T19:42:31.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Rui&#39;s Blog">
+<meta name="twitter:title" content="Projects">
+<meta name="twitter:description" content="Web-based Scheduler ApplicationDate: October - December, 2018 DescriptionThis project is an implementation of web-based scheduler application through Amazon Web Service (AWS) in Software Engineering c">
+<meta name="twitter:image" content="http://yoursite.com/projects/images/part.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/">
+  <link rel="canonical" href="http://yoursite.com/projects/">
 
 
 
@@ -127,7 +135,7 @@
   };
 </script>
 
-  <title>Archive | Rui's Blog</title>
+  <title>Projects | Rui's Blog</title>
   
 
 
@@ -175,7 +183,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -246,7 +254,7 @@
         
         
           
-          <li class="menu-item menu-item-projects">
+          <li class="menu-item menu-item-projects menu-item-active">
 
     
     
@@ -297,7 +305,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -377,78 +385,109 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">Projects
+
+</h1>
+
+<div class="post-meta">
   
   
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+
+
+
+</div>
+
+</header>
 
       
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 1 post. Keep on posting.
-      </span>
       
-
       
+      <div class="post-body">
+        
+        
+          <h2 id="Web-based-Scheduler-Application"><a href="#Web-based-Scheduler-Application" class="headerlink" title="Web-based Scheduler Application"></a>Web-based Scheduler Application</h2><p><em>Date: October - December, 2018</em></p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>This project is an implementation of web-based scheduler application through Amazon Web Service (AWS) in Software Engineering course as a 4-people group. The application has participant, organizer, and administrator pages, and supports functions such as create schedule, retrieve schedule, close/open timeslots, register/cancel meeting, etc. </p>
+<p>The project is developed using Entity, Boundary, and Controller (EBC) model. </p>
+<p>We used plain JavaScript to implement our front-end webpages and we used Java for our back-end server.</p>
+<p><strong>Links to the websites are available below</strong></p>
+<h3 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h3><h4 id="Organizer-Desired-Features"><a href="#Organizer-Desired-Features" class="headerlink" title="Organizer Desired Features"></a>Organizer Desired Features</h4><p>The organizer wants to be able to carry out the following tasks:</p>
+<ul>
+<li><p>Create a new meeting schedule (with its own user-friendly name, such as “Advising Schedule”) with a fixed timeslot duration (of 10,15,20,30, or 60 minutes) that is active from a given start date up until given ending date. For each day there is a daily start hour (such as 9:00 AM or 12:00 PM) and there is a daily end hour (such as 5:00 PM or 8:00 PM). No meeting can be schedule before the start hour; no meeting can be scheduled at or later than the end hour. Upon successful creation of a meeting schedule, the organizer is given a “secret code” that will be used to authenticate all future edit/delete requests.</p>
+</li>
+<li><p>Close/Open an individual time slot on a specific day (i.e., 9:30 – 9:45 on 14-Feb-2018)</p>
+</li>
+<li><p>Close/Open all time slots at a given time (i.e., 9:15 – 9:30 on any day)</p>
+</li>
+<li><p>Close/Open all time slots on a given day (i.e., all timeslots on 12-Feb-2018)</p>
+</li>
+<li><p>Cancel any individual meeting at any time</p>
+</li>
+<li><p>Review weekly schedule of meetings for a given calendar week (i.e., above is the result for the week of 12-Feb-2018) to see what meetings have been scheduled</p>
+</li>
+<li><p>Once a meeting schedule is created, the organizer must tell participants about the scheduled meeting so they can start to register for meetings</p>
+</li>
+<li><p>Extend the ending date of a meeting schedule to a future date</p>
+</li>
+<li><p>Extend the starting date of a meeting schedule to an earlier date</p>
+</li>
+<li><p>Delete a meeting schedule once it no longer is useful. Note that organizers can only delete meeting schedules that they had previously created</p>
+</li>
+</ul>
+<h4 id="Participant-Desired-Features"><a href="#Participant-Desired-Features" class="headerlink" title="Participant Desired Features"></a>Participant Desired Features</h4><p>Participants want to be able to carry out the following tasks:</p>
+<ul>
+<li><p>Review weekly schedule of meetings for a given meeting schedule, based on information from an organizer</p>
+</li>
+<li><p>Create a meeting in a given open timeslot in a meeting schedule. For each such meeting, the participant can provide a string that will be recorded with the timeslot. Typically this would be just a user name, but it could also be an email address. Upon the successful creation of a meeting, the participant is given a “secret code” that will be used to authenticate all future edit/delete requests</p>
+</li>
+<li><p>Cancel a previously scheduled meeting; this must be restricted so participants can only cancel a meeting that they had previously created</p>
+</li>
+<li><p>Search for a list of open time slots (filtered by Month, Year, Day-Of-Week, Day-Of-Month, or Timeslot). These individual search filters can be combined to reduce the search results. Within the search results, the participant can simply create a meeting from one of the returned timeslots</p>
+</li>
+</ul>
+<h4 id="System-Administrator-Feature"><a href="#System-Administrator-Feature" class="headerlink" title="System Administrator Feature"></a>System Administrator Feature</h4><p>The system administrator is responsible for maintaining the system and would like to carry out the following tasks:</p>
+<ul>
+<li><p>Retrieve a list of meeting schedules more than N days old and delete them from the system</p>
+</li>
+<li><p>Retrieve a list of meeting schedules created in the past N hours</p>
+</li>
+</ul>
+<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><p><img src="/projects/images/part.png" alt="" title="Participant&#39;s page"><br><img src="/projects/images/org.png" alt="" title="Oragnizer&#39;s page"><br><img src="/projects/images/admin.png" alt="" title="Administrator&#39;s page"></p>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><h4 id="Repository-Links"><a href="#Repository-Links" class="headerlink" title="Repository Links"></a>Repository Links</h4><p><a href="https://github.com/Ryc1x/CS3733-GP-Scheduler-Front/" target="_blank" rel="noopener">Front-end Github Repository</a></p>
+<h4 id="Application-Links"><a href="#Application-Links" class="headerlink" title="Application Links"></a>Application Links</h4><ul>
+<li><a href="https://s3.us-east-2.amazonaws.com/cs3733-electra/html/participant.html" target="_blank" rel="noopener">Participant Page</a></li>
+<li><a href="https://s3.us-east-2.amazonaws.com/cs3733-electra/html/organizer.html" target="_blank" rel="noopener">Organizer Page</a></li>
+<li><a href="https://s3.us-east-2.amazonaws.com/cs3733-electra/html/administrator.html" target="_blank" rel="noopener">Administrator Page</a></li>
+</ul>
 
         
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/01/02/AoC2018/" itemprop="url">
-              
-                <span itemprop="name">AoC2018</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-02T14:49:42-05:00" content="2019-01-02">
-          01-02
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
-
       
-
+      
+      
     </div>
+    
+
+
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -469,8 +508,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -557,6 +605,22 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Web-based-Scheduler-Application"><span class="nav-number">1.</span> <span class="nav-text">Web-based Scheduler Application</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Features"><span class="nav-number">1.2.</span> <span class="nav-text">Features</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Organizer-Desired-Features"><span class="nav-number">1.2.1.</span> <span class="nav-text">Organizer Desired Features</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Participant-Desired-Features"><span class="nav-number">1.2.2.</span> <span class="nav-text">Participant Desired Features</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#System-Administrator-Feature"><span class="nav-number">1.2.3.</span> <span class="nav-text">System Administrator Feature</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Images"><span class="nav-number">1.3.</span> <span class="nav-text">Images</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Links"><span class="nav-number">1.4.</span> <span class="nav-text">Links</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Repository-Links"><span class="nav-number">1.4.1.</span> <span class="nav-text">Repository Links</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Application-Links"><span class="nav-number">1.4.2.</span> <span class="nav-text">Application Links</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -692,6 +756,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.6.0"></script>
+<script src="/js/src/post-details.js?v=6.6.0"></script>
+
+
 
   
 
