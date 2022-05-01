@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Rui&#39;s Blog</title>
+  
+  <subtitle>Some random thoughts</subtitle>
+  <link href="http://yoursite.com/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-01-02T20:17:12.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Rui Huang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AoC2018</title>
+    <link href="http://yoursite.com/2019/01/02/AoC2018/"/>
+    <id>http://yoursite.com/2019/01/02/AoC2018/</id>
+    <published>2019-01-02T19:49:42.000Z</published>
+    <updated>2019-01-02T20:17:12.000Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;em&gt;A brief summary post of my Advent of Code 2018 experience.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Advent-of-Code&quot;&gt;&lt;a href=&quot;#Advent-of-Code&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    
+    <category term="Advent of Code" scheme="http://yoursite.com/tags/Advent-of-Code/"/>
+    
+    <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
+  
+</feed>
